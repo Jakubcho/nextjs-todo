@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const DB_URL = process.env.DB_URL;
+const DB_URL = "mongodb+srv://jakubchola92:XVbV3cVZI6xhPLqz@todoclaster.lqmxdsd.mongodb.net/TodoList?retryWrites=true&w=majority"
 
 if(!DB_URL){
     throw new Error(
