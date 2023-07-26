@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from 'react';
-const url = 'https://todos-6rlb.vercel.app/api/todo';
+const url = 'https://todos-git-main-jakubcho.vercel.app/api/todo';
 
 export default function Home(props) {
   const [todos,setTodos] = useState(props.todos);
