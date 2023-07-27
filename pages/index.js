@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from 'react';
-const url = 'https://nextjs-todo-indol.vercel.app/';
+const url = process.env.NEXT_PUBLIC_VERCEL_URL;
 
 export default function Home(props) {
   const [todos,setTodos] = useState(props.todos);
