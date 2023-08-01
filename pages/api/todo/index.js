@@ -13,7 +13,7 @@ export default async (req,res) => {
                 .status(200)
                 .json({data:newTodo, message:"Todo added success"});
         } catch(error){
-            res.status(500).json({message:"Internal Server Error"});
+            res.status(500).json({message:"Internal Server Error; method: POST"});
             console.log(error);
         }
     }
@@ -22,7 +22,7 @@ export default async (req,res) => {
             const todos = await Todo.find();
             res.status(200).json({data:todos});
         } catch(error){
-            res.status(500).json({message:"Internal Server Error"});
+            res.status(500).json({message:"Internal Server Error; method: GET"});
             console.log(error);
         }
     }

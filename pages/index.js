@@ -96,14 +96,6 @@ export default function Home(props) {
             {todo._id ? "Update" : "Dodaj"}
           </button>
         </form>
-        {/* <h1>Test</h1>
-         <ol>
-          <li>Utworzenie połączenia z bazą danych "dbConnect"</li>
-          <li>Utworzenie schematu models/Todo.js</li>
-          <li>Przygotowanie API pages/api/todo index.js + [id].js</li>
-          <li>Prace z plikiem index.js w celu pobrania danych</li>
-          <li>Pobieranie danych do elementu getServerSideProps</li>
-         </ol> */}
       </main>
     </>
   )
