@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import axios from 'axios';
 import { useState } from 'react';
-const url = 'https://nextjs-todo-indol.vercel.app/api/todo';
+const url = `${process.env.API_URL}/api/todo`;
 
 export default function Home(props) {
   const [todos,setTodos] = useState(props.todos);
@@ -103,7 +103,6 @@ export default function Home(props) {
 
 export const getServerSideProps = async () => {
   const {data} = await axios.get(url);
-  console.log(data);
   return {
     props: {
       todos: data.data,
